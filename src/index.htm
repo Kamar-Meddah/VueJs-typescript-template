@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="Description" content="progressive web app with vue">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vue app</title>
+
+<link rel="icon" type="image/png" href="favicon.ico">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4DBA87">
+<!-- Add to home screen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="vue app">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon-152x152.png">
+<link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#4DBA87">
+<!-- Add to home screen for Windows -->
+<meta name="msapplication-TileImage" content="assets/icons/msapplication-icon-144x144.png">
+<meta name="msapplication-TileColor" content="#000000">
+<body>
+<div id="app"></div>
+<noscript>
+    This is your fallback content in case JavaScript fails to load.
+</noscript>
+<script>if ('serviceWorker' in navigator) {navigator.serviceWorker.register('/service-worker.js')}</script>
+</body>
+
+</html>

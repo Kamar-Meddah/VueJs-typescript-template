@@ -1,5 +1,5 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
-import withRender from './appComponent.html?style=./appComponent.scss';
+import withRender from './app.component.html?style=./app.component.scss';
 
 @withRender
 @Component({

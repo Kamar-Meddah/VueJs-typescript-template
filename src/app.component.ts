@@ -6,6 +6,6 @@ import withRender from './appComponent.html?style=./appComponent.scss';
 })
 export default class AppComponent extends Vue {
 mounted(){
-
+console.log('hello')
 }
 }

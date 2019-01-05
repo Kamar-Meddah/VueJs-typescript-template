@@ -7,7 +7,7 @@ This guide is flexible enough that any steps here can be used to integrate TypeS
 
 Let's create a new package.
 
-```sh
+```shell
 mkdir typescript-vue-tutorial
 cd typescript-vue-tutorial
 ```
@@ -52,7 +52,7 @@ You can always go back and change these in the `package.json` file that's been g
 We'll be using a custom repository that uses experimental declarations for Vue.
 These declarations are currently maintained on a fork of Vue, but may be part of the main repo in the near future.
 
-```sh
+```shell
 run npm install
 ```
 
@@ -62,18 +62,20 @@ Webpack is a tool that will bundle your code and optionally all of its dependenc
 While you don't need to use a bundler like Webpack or Browserify, these tools will allow us to use `.vue` files which we'll cover in a bit.
 
 # main.ts
+
+```typscript
 import Vue from "vue";
 import AppComponent from "./app.component";
 
 let v = new Vue({
     el: "#app",
     components: {AppComponent},
-    render(h){
-        return h('AppComponent');
-    }
+    render(h) => h('AppComponent');
 });
+```
 
 # app.component.ts
+```typescript
 import { Vue, Component, Prop } from "vue-property-decorator";
 import withRender from './appComponent.html?style=./appComponent.scss';
 
@@ -81,8 +83,9 @@ import withRender from './appComponent.html?style=./appComponent.scss';
 @Component({
 })
 export default class AppComponent extends Vue {
-mounted(){
+   mounted(){
 
+   }
 }
-}
+```
 
